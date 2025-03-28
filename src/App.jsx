@@ -1,21 +1,16 @@
-import Card from './Card'
+// HOW TO STYLE REACT COMPONENTS WITH CSS
+// (not including external frameworks or preprocessors)
+// ----------------------------------------------------------------------
 
-import './App.css'
+// 1. EXTERNAL - Global styles
+// 2. MODULES - Component level styles
+// 3. INLINE - Small components with minimal styles
 
-const data = [
-  { id: 1, name: 'Item 1', description: 'Description for Item 1' },
-  { id: 2, name: 'Item 2', description: 'Description for Item 2' },
-  { id: 3, name: 'Item 3', description: 'Description for Item 3' },
-  { id: 4, name: 'Item 4', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odio, reprehenderit tempora architecto vero delectus error fugit saepe, ea fuga dicta pariatur! Perferendis odit dicta officia. Quos atque sequi animi!' },
-];
+import Button from "./components/button/Button";
 
 function App() {
   return(
-    <>
-      {
-        data.map(item => <Card id={item.id} name={item.name} desc={item.description} />)
-      }
-    </>
+    <Button />
   );
 }
 
