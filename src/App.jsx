@@ -1,16 +1,13 @@
-// HOW TO STYLE REACT COMPONENTS WITH CSS
-// (not including external frameworks or preprocessors)
-// ----------------------------------------------------------------------
-
-// 1. EXTERNAL - Global styles
-// 2. MODULES - Component level styles
-// 3. INLINE - Small components with minimal styles
-
-import Button from "./components/button/Button";
+import Student from "./components/student/Student";
 
 function App() {
   return(
-    <Button />
+    <>
+      <Student name="Spongebob" age={25} isStudent={true}/>
+      <Student name="Patrick" age={35} isStudent={false} />
+      <Student name="Sandy" age={20} isStudent={true}/>
+      <Student />
+    </>
   );
 }
 

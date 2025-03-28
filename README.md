@@ -1,58 +1,33 @@
 # React Learnings
 
-### HOW TO STYLE REACT COMPONENTS WITH CSS 
-#### (not including external frameworks or preprocessors)
+## PROPS
 
-----------------------------------------------------------------------
+Read-only properties that are shared between components. 
+A parent component can send data to a child component.
 
-1. EXTERNAL - Global styles
-2. MODULES - Component level styles
-3. INLINE - Small components with minimal styles
+<Component key="value" numKey={100} boolKey={true} />
 
-### MODULES - Component level styles
+## PROP TYPES
 
-```javascript
-import './Button.css';
-
-function Button() {
-    return (
-        <button className='button'>Click me</button>
-    );
-}
-
-export default Button;
-```
-
-```css
-.button {
-    background-color: hsl(200, 100%, 50%);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-```
-
-### INLINE - Small components with minimal styles
+A mechanism that ensures that the passed value is of correct datatype.
 
 ```javascript
-function Button() {
-
-    const styles = {
-        backgroundColor: "hsl(200, 100%, 50%)",
-        color: "white",
-        padding: "10px 20px",
-        borderRadius: "5px",
-        border: "none",
-        cursor: "pointer",
-    }
-    return (
-        <button style={styles}>Click me</button>
-    );
+Student.propTypes = {
+    name: PropTypes.string,
+    age: PropTypes.number,
+    isStudent: PropTypes.bool,
 }
-
-export default Button;
 ```
 
-In inline CSS, actual CSS will be converted into JSON object & take note of camelcase properties.
+These prop types just issue warning & won't prevent program from running.
+
+```age``` is supposed to be number & if a string value is passed instead then prop types check will call that out as an error in console.
+
+
+## DEFAULT PROPS
+
+Default values in case they are not passed from parent component.
+
+```javascript
+const Component: FC<Props> = ({ foo = 'hello', bar = 'world' }) => {}
+```
