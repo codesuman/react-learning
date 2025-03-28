@@ -13,15 +13,32 @@ If you are developing a production application, we recommend using TypeScript an
 
 # React Learnings
 
-React Component : function that returns JSX code
+```javascript
+import React from 'react';
 
-JSX (JS XML) :
-Enables to write JS inside HTML code
+const data = [
+  { id: 1, name: 'Item 1', description: 'Description for Item 1' },
+  { id: 2, name: 'Item 2', description: 'Description for Item 2' }
+];
 
-const fruits = ['Apple', 'Orange', 'Banana'];
+function ItemComponent({ item, key }) {
+  return (
+    <div key={key}>
+      <h3>{item.name}</h3>
+      <p>{item.description}</p>
+    </div>
+  );
+}
 
-<ul>
-    <li>{fruits[0]}</li>
-    <li>{fruits[1]}</li>
-    <li>{fruits[2]}</li>
-</ul>
+function App() {
+  return (
+    <div>
+      {data.map(item => (
+        <ItemComponent key={item.id} item={item} />
+      ))}
+    </div>
+  );
+}
+
+export default App;
+```
