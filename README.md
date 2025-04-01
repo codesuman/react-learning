@@ -1,33 +1,15 @@
 # React Learnings
 
-## PROPS
+## CONDITIONAL RENDERING
 
-Read-only properties that are shared between components. 
-A parent component can send data to a child component.
-
-<Component key="value" numKey={100} boolKey={true} />
-
-## PROP TYPES
-
-A mechanism that ensures that the passed value is of correct datatype.
+Allows you to control what gets rendered in the application based on certain conditions. 
+(show, hide or change components)
 
 ```javascript
-Student.propTypes = {
-    name: PropTypes.string,
-    age: PropTypes.number,
-    isStudent: PropTypes.bool,
+const UserGreeting = ({userName, isLoggedIn}) => {
+    const welcomeMessage = <h2>Welcome, {userName}</h2>;
+    const loginMessage = <h2>Please login to continue</h2>;
+
+    return (isLoggedIn ? welcomeMessage : loginMessage);
 }
-```
-
-These prop types just issue warning & won't prevent program from running.
-
-```age``` is supposed to be number & if a string value is passed instead then prop types check will call that out as an error in console.
-
-
-## DEFAULT PROPS
-
-Default values in case they are not passed from parent component.
-
-```javascript
-const Component: FC<Props> = ({ foo = 'hello', bar = 'world' }) => {}
 ```

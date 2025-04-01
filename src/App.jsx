@@ -1,13 +1,8 @@
-import Student from "./components/student/Student";
+import UserGreeting from "./components/UserGreeting";
 
 function App() {
   return(
-    <>
-      <Student name="Spongebob" age={25} isStudent={true}/>
-      <Student name="Patrick" age={35} isStudent={false} />
-      <Student name="Sandy" age={20} isStudent={true}/>
-      <Student />
-    </>
+    <UserGreeting isLoggedIn={true} userName="Admin"/>
   );
 }
 
