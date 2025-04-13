@@ -1,8 +1,8 @@
 # React Learnings
 
-## LISTS RENDERING
+## CLICK EVENTS
 
-Mostly when you have Array of elements / objects, use map to iterate over the array & generate UI element for each array element.
+An event that gets triggered when user clicks on a specific element. We can respond to such events by passing a callback to the onClick event handler.
 
 ```javascript
 const ListComponent = ({items}) => {
