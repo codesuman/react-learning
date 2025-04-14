@@ -1,8 +1,9 @@
-import ButtonSection from "./components/ButtonSection";
-import ProfilePic from "./components/ProfilePic";
+import StateComponent from "./components/StateComponent";
+import CounterComponent from "./components/counter-component/CounterComponent";
+
 
 function App() {
-  return <ButtonSection/>;
+  return <CounterComponent/>;
 }
 
 export default App;
