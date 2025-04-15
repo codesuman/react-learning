@@ -1,9 +1,7 @@
-import StateComponent from "./components/StateComponent";
-import CounterComponent from "./components/counter-component/CounterComponent";
-
+import FormComponent from './components/form-component/FormComponent';
 
 function App() {
-  return <CounterComponent/>;
+  return <FormComponent/>;
 }
 
 export default App;
