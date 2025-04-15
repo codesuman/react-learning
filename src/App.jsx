@@ -1,7 +1,7 @@
-import CarDetails from './components/CarDetails';
+import FruitsList from './components/FruitsList';
 
 function App() {
-  return <CarDetails/>;
+  return <FruitsList/>;
 }
 
 export default App;
