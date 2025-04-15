@@ -1,7 +1,7 @@
-import ColorPicker from './components/color-picker/ColorPicker';
+import CarDetails from './components/CarDetails';
 
 function App() {
-  return <ColorPicker/>;
+  return <CarDetails/>;
 }
 
 export default App;
