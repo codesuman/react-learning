@@ -1,0 +1,22 @@
+.color-picker-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-display {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 3px solid grey;
+}
+
+.color-display p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}

@@ -1,7 +1,7 @@
-import FormComponent from './components/form-component/FormComponent';
+import ColorPicker from './components/color-picker/ColorPicker';
 
 function App() {
-  return <FormComponent/>;
+  return <ColorPicker/>;
 }
 
 export default App;
