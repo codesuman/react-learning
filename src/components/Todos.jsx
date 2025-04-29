@@ -1,8 +1,30 @@
-import { useState } from "react";
+import { useReducer } from "react";
+
+const reducer = (state, action) => {
+    switch (action.type) {
+        case 'update_draft': {
+            return {
+                ...state,
+                draft: action.nextDraft
+            }
+        };
+        case 'add_todo': {
+            return {
+                draft: '',
+                todos: [
+                    {
+                        id: state.todos.length,
+                        desc: state.draft
+                    },
+                    ...state.todos
+                ]
+            }
+        };
+    }
+}
 
 const Todos = () => {
-    const [todos, setTodos] = useState(['Go to office']);
-    const [todo, setTodo] = useState('');
+    const [state, dispatch] = useReducer(reducer, {draft: '', todos: []});
 
     return(
         <div>
@@ -10,19 +32,23 @@ const Todos = () => {
 
             <ul>
                 {
-                    todos.map((todo, idx) => {
-                        return <li key={idx}>{todo}</li>
+                    state.todos.map((todo) => {
+                        return <li key={todo.id}>{todo.desc}</li>
                     })
                 }
             </ul>
 
             <input type="text" placeholder="Enter todo"
-                value={todo} 
-                onChange={(e) => setTodo(e.target.value)}/>
+                value={state.draft} 
+                onChange={(e) => dispatch({
+                    type: 'update_draft',
+                    nextDraft: e.target.value
+                })}/>
 
             <button onClick={() => {
-                setTodos([...todos, todo]);
-                setTodo('');
+                dispatch({
+                    type: 'add_todo'
+                })
             }}>Add</button>
         </div>
     );
