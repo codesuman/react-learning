@@ -19,7 +19,7 @@ If you are developing a production application, we recommend using TypeScript an
 
 # React Learnings
 
-React Component : function that returns JSX code
+`React Component` : function that returns JSX code
 
 `JSX`, or JavaScript XML, serves as a syntax extension for JavaScript, enabling developers to write HTML-like code within JavaScript files. It is primarily used in React to describe the structure of user interface components. While it resembles HTML, JSX offers the full power of JavaScript, allowing for dynamic content rendering, embedding expressions, and handling events efficiently. 
 JSX is not directly interpreted by browsers. Instead, it undergoes a compilation process, typically using Babel, to transform it into standard JavaScript code, specifically into `React.createElement()` calls. This transformation ensures that browsers can understand and execute the code correctly. 
