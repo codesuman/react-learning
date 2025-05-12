@@ -4,6 +4,13 @@
 
 React Hooks are functions that let developers "hook into" React state and lifecycle features from functional components. Hooks allow the use of state and other React features without writing class components. They enable the reuse of stateful logic between components, making code more readable, testable, and maintainable. 
 
+### Key Differences and When to Use Each Approach
+
+| Purpose | Hooks |
+| :---         |     :---:      |
+| Create State | `useState`, `useReducer` |
+| Monitor State  | `useEffect`, `useMemo`, `useCallback` |
+
 #### Here are some commonly used built-in Hooks:
 
 ### useState: 
