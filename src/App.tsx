@@ -1,12 +1,12 @@
 import { PokemonProvider } from "./pokemon/PokemonStore";
-import { PokemonComponent } from "./pokemon/PokemonComponent";
+import { PokemonApp } from "./pokemon/PokemonApp";
 
 import './App.css';
 
 function App() {
   return (
     <PokemonProvider>
-      <PokemonComponent />
+      <PokemonApp />
     </PokemonProvider>
   )
 }
