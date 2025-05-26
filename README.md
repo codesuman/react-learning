@@ -68,3 +68,9 @@ JSX promotes code readability and maintainability by providing a familiar HTML-l
 * [hooks-usecontext]()
 * [hooks-useref]()
 * [stopwatch-app]()
+
+
+## Typescript
+
+* [useContext with Store](https://github.com/codesuman/react-playground/tree/ts-hooks-usecontext)
+* [useReducer with Store](https://github.com/codesuman/react-playground/tree/ts-hooks-usereducer)
