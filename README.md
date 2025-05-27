@@ -74,3 +74,4 @@ JSX promotes code readability and maintainability by providing a familiar HTML-l
 
 * [useContext with Store](https://github.com/codesuman/react-playground/tree/ts-hooks-usecontext)
 * [useReducer with Store](https://github.com/codesuman/react-playground/tree/ts-hooks-usereducer)
+* [Search with Debounce](https://github.com/codesuman/react-playground/tree/ts-debounce-impl)
