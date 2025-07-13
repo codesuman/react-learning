@@ -45,6 +45,8 @@ JSX promotes code readability and maintainability by providing a familiar HTML-l
 
 [All about JSX](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
 
+
+[Understanding `return ()` vs `return {}`](./docs/react-return-syntax.md)
 # Topics
 
 * [cards](https://github.com/codesuman/react-playground/tree/cards)
