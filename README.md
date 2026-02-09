@@ -36,7 +36,6 @@ If you are developing a production application, we recommend using TypeScript an
 * [hooks-usereducer](https://github.com/codesuman/react-playground/tree/hooks-usereducer)
 * [hooks-useeffect]()
 * [digital-clock-app]()
-* [hooks-usecontext]()
 * [hooks-useref]()
 * [stopwatch-app]()
 
