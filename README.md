@@ -16,6 +16,10 @@ If you are developing a production application, we recommend using TypeScript an
 
 [Understanding `return ()` vs `return {}`](./docs/react-return-syntax.md)
 
+# Zustand
+
+[React State Management — using Zustand](https://medium.com/globant/react-state-management-b0c81e0cbbf3)
+
 # Topics
 
 * [cards](https://github.com/codesuman/react-playground/tree/cards)
